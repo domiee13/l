@@ -1,0 +1,115 @@
+@font-face {
+    font-family: FVF Fernando 08;
+    src: url(../fonts/FVF\ Fernando\ 08.ttf);
+}
+
+html {
+    font-family: FVF Fernando 08;
+}
+
+#block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 35px;
+}
+
+#bc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    gap: 10px;
+    padding: 10px;
+}
+
+#text {
+    font-family: 'FVF Fernando 08';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 128px;
+    line-height: normal;
+    text-align: center;
+    color: #ffffff;
+    /* color: #ff0060; */
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: rgb(255, 255, 255); */
+    paint-order: stroke fill;
+
+}
+
+#subtext {
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 199px;
+    text-align: center;
+    color: #ff0060;
+    /* color: #0079FF; */
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: rgb(255, 255, 255); */
+    paint-order: stroke fill;
+    font-family: 'FVF Fernando 08';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: normal;
+    text-align: center;
+    margin-top: -200px;
+}
+
+.pxlbtn {
+    margin-top: -10px;
+    font-size: 1.3em;
+    font-family: 'FVF Fernando 08', cursive;
+    font-weight: 1000;
+    width: 300px;
+    height: 100px;
+    background: #00DFA2;
+    color: #F6FA70;
+    border: 0px;
+    position: relative;
+    box-shadow:
+        inset -4px 2px 1px 1px grey,
+        inset -4px -2px 1px 1px lightgray,
+        inset 4px 0px 1px 1px lightgray;
+}
+
+.pxlbtn:hover {
+    cursor: pointer;
+    background-color: #F6FA70;
+    color: #00DFA2;
+}
+
+.pxlbtn:active {
+    top: 5px;
+    box-shadow:
+        -4px 2px 1px 1px grey,
+        -4px -2px 1px 1px lightgray,
+        4px 0px 1px 1px lightgray;
+}
+
+.pxlbtn::after {
+    content: '';
+    background: black;
+    position: absolute;
+    left: -2.5%;
+    top: 0;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+}
+
+.pxlbtn::before {
+    content: '';
+    background: black;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 100%;
+    height: 113%;
+    z-index: -1;
+}
